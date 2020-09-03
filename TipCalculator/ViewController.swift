@@ -17,6 +17,9 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
+    
+    //Toggle keyboard for billField when the app is launched
+    self.billField.becomeFirstResponder()
   }
 
   @IBAction func onTap(_ sender: Any) {
