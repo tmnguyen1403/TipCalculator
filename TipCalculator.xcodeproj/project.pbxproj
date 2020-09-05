@@ -15,6 +15,7 @@
 		7032B3F624F84B710091CA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7032B3F424F84B710091CA56 /* LaunchScreen.storyboard */; };
 		7032B40124F84B710091CA56 /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7032B40024F84B710091CA56 /* TipCalculatorTests.swift */; };
 		7032B40C24F84B710091CA56 /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7032B40B24F84B710091CA56 /* TipCalculatorUITests.swift */; };
+		704B835C2504200B00D4AD72 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B835B2504200B00D4AD72 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7032B40724F84B710091CA56 /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7032B40B24F84B710091CA56 /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		7032B40D24F84B710091CA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		704B835B2504200B00D4AD72 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				7032B3EB24F84B6F0091CA56 /* SceneDelegate.swift */,
 				7032B3ED24F84B6F0091CA56 /* ViewController.swift */,
 				7032B3EF24F84B6F0091CA56 /* Main.storyboard */,
+				704B835B2504200B00D4AD72 /* SettingViewController.swift */,
 				7032B3F224F84B710091CA56 /* Assets.xcassets */,
 				7032B3F424F84B710091CA56 /* LaunchScreen.storyboard */,
 				7032B3F724F84B710091CA56 /* Info.plist */,
@@ -262,6 +265,7 @@
 				7032B3EE24F84B6F0091CA56 /* ViewController.swift in Sources */,
 				7032B3EA24F84B6F0091CA56 /* AppDelegate.swift in Sources */,
 				7032B3EC24F84B6F0091CA56 /* SceneDelegate.swift in Sources */,
+				704B835C2504200B00D4AD72 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

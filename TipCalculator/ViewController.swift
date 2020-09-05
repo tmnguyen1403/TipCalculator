@@ -16,6 +16,37 @@ class ViewController: UIViewController {
   @IBOutlet weak var tipControl: UISegmentedControl!
   let TIME_DATA = 10 * 60.0//data is stored in 10 mins
   var currencySymbol : String = ""
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    print("view will appear")
+    view.alpha = 0.2
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    print("view did appear")
+    //animate view
+    let userDefault = UserDefaults.init()
+    let colorOptions = [UIColor.white, UIColor.systemBlue, UIColor.systemRed, UIColor.systemPink]
+    let userBackgroundOption = userDefault.integer(forKey: "backgroundColor")
+    let backgroundColor = colorOptions[userBackgroundOption]
+    UIView.animate(withDuration: 0.1, delay: 0.0, options: [],
+                      animations: {[weak self] in
+                        self?.view.backgroundColor = backgroundColor
+                        self?.view.alpha = 1
+      })
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    print("view will disappear")
+  }
+  
+  override func viewDidDisappear(_ animated: Bool) {
+    super.viewDidDisappear(animated)
+    print("view did disappear")
+  }
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
@@ -91,6 +122,14 @@ class ViewController: UIViewController {
   @IBAction func onTap(_ sender: Any) {
     print("hello")
     
+//    if let color = view.backgroundColor {
+//      if color.cgColor == UIColor.systemBlue.cgColor {
+//        view.backgroundColor =  .systemGray
+//      }
+//      else {
+//        view.backgroundColor = .systemBlue
+//      }
+//    }
     view.endEditing(true)
   }
   
