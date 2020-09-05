@@ -10,25 +10,25 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is complete:
 
-* [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
+* [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
+* [x] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
 
 The following **optional** features are implemented:
 
-* [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
-* [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] UI animations
+* [x] Remembering the bill amount across app restarts (if <10mins)
+* [x] Using locale-specific currency and currency thousands separators.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Add Settings screen which allows user to change background color
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/KWBBztN.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -36,6 +36,12 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 1. I created the project with default using SwiftUI. I didn't realize that until I followed the tutorial and tried to run the app on the simulator. I tried to
 delete the SwiftUI file and reconfig it but there were too many errors. In the end, I decided to copy the code and restart the project with story board default.
+
+2. There was a struggle when I tried to change the currency and thousand separator. At first, I thought the app would allow users to change the currency symbol.
+I was struggling for a while because that task would require to store all of currency symbols in the world. Later, I reviewed the requirement and used locale settings to implement the feature.
+`However, the decimal number was not converted correctly if the selected region (such as Germany) uses comma instead of dot. Therefore, I had to use Regex to replace the "comma" with "dot" for those specific regions.
+
+3. I still have struggle setting contrainsts and make the UI looks nice.
 
 ## License
 
