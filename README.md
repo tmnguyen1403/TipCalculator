@@ -43,6 +43,9 @@ I was struggling for a while because that task would require to store all of cur
 
 3. I still have struggle setting contrainsts and make the UI looks nice.
 
+## Conclusion
+Those tasks took me 10 hours in total.
+
 ## License
 
     Copyright [yyyy] [name of copyright owner]
